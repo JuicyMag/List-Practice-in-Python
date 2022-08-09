@@ -1,4 +1,4 @@
-
+import random
 
 test = ['Hello', '1',True,'2.4', False, 2, '4']
 test_even_function = [0,1,2,3,4,5,6,7,8]
@@ -83,7 +83,7 @@ def add_two_elements_to_list(input_list):
     empty_list.append(chars_to_apend[0:2])
     return empty_list
 
-print(add_two_elements_to_list(test))
+# print(add_two_elements_to_list(test))
 # no_char_as = remove_a_from_list(char_list)
 # print(no_char_as)
 
@@ -109,5 +109,16 @@ print(add_two_elements_to_list(test))
 # print(b)
 
 
-f = open("wordlist.10000.txt", "r")
-print(f.read())
+#the below section is all about opening and acting on txt
+
+def open_file(file_name):
+    f = open(file_name, 'r')
+    c = f.read()
+    return c
+
+#consumes an entire txt file, returns one random word
+def pick_random_word_from_text(entire_txt_file):
+    x = entire_txt_file.split()
+    return random.choice(x)
+b = open_file("wordlist.10000.txt")
+print(pick_random_word_from_text(b))
