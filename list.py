@@ -34,9 +34,9 @@ odd_list = [x for x in test_even_function if x%2 !=0]
 # print(odd_list)  
 
 #func consumes a list and a returns a list of all numbers greater than floor
-def is_greater_than_specified(list, floor):
+def is_greater_than_specified(list_of_values, floor):
     floor_list = []
-    for num in list:
+    for num in list_of_values:
         if num > floor:
             floor_list.append(num)
     return floor_list
@@ -44,12 +44,14 @@ def is_greater_than_specified(list, floor):
 
 
 #func consumes a list and a returns a list of all numbers less than ceiling
-def is_less_than_specified(list, ceiling):
+def is_less_than_specified(list_of values, ceiling):
     ceiling_list = []
-    for num in list:
+    for num in list_of values:
         if num < ceiling:
             ceiling_list.append(num)
     return ceiling_list
+
+
 
 b = is_less_than_specified(test_even_function, 5)
 print(b)
