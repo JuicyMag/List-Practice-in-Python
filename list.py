@@ -66,8 +66,21 @@ def remove_odd_numbers(list_of_values):
             list_of_no_odds.append(num)
     return list_of_no_odds
 
-d = remove_odd_numbers(test_of_tens)
-print(d)
+char_list = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+
+def remove_a_from_list(list_of_chars):
+    no_a_list = []
+    for char in list_of_chars:
+        if char != 'a':
+            no_a_list.append(char)
+    return no_a_list
+
+no_char_as = remove_a_from_list(char_list)
+print(no_char_as)
+
+
+# d = remove_odd_numbers(test_of_tens)
+# print(d)
 # no_tens_in_list = [x for x in test_of_tens if x %10 !=0]
 # print(no_tens_in_list)
 # c = remove_multiples_of_ten(test_of_tens)
