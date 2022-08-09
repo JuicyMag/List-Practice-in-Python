@@ -1,3 +1,5 @@
+
+
 test = ['Hello', '1',True,'2.4', False, 2, '4']
 test_even_function = [0,1,2,3,4,5,6,7,8]
 test_of_tens = [10,20, 30, 40 ,50 ,60 ,70, 71 ,80 ,99, 100]
@@ -105,3 +107,7 @@ print(add_two_elements_to_list(test))
 # print(a)
 # b = is_odd(test_even_function)
 # print(b)
+
+
+f = open("wordlist.10000.txt", "r")
+print(f.read())
