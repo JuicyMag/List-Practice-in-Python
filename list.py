@@ -75,8 +75,15 @@ def remove_a_from_list(list_of_chars):
             no_a_list.append(char)
     return no_a_list
 
-no_char_as = remove_a_from_list(char_list)
-print(no_char_as)
+def add_two_elements_to_list(input_list):
+    empty_list = input_list
+    chars_to_apend = 'g','p'
+    empty_list.append(chars_to_apend[0:2])
+    return empty_list
+
+print(add_two_elements_to_list(test))
+# no_char_as = remove_a_from_list(char_list)
+# print(no_char_as)
 
 
 # d = remove_odd_numbers(test_of_tens)
