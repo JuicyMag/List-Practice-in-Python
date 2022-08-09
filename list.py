@@ -58,10 +58,20 @@ def remove_multiples_of_ten(list_of_values):
             list_of_no_tens.append(num)
     return list_of_no_tens
 
-no_tens_in_list = [x for x in test_of_tens if x %10 !=0]
-print(no_tens_in_list)
-c = remove_multiples_of_ten(test_of_tens)
-print(c)
+
+def remove_odd_numbers(list_of_values):
+    list_of_no_odds = []
+    for num in list_of_values:
+        if num %2 ==0:
+            list_of_no_odds.append(num)
+    return list_of_no_odds
+
+d = remove_odd_numbers(test_of_tens)
+print(d)
+# no_tens_in_list = [x for x in test_of_tens if x %10 !=0]
+# print(no_tens_in_list)
+# c = remove_multiples_of_ten(test_of_tens)
+# print(c)
 # b = is_less_than_specified(test_even_function, 5)
 # print(b)
 
