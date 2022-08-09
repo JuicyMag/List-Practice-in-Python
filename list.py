@@ -1,6 +1,6 @@
 test = ['Hello', '1',True,'2.4', False, 2, '4']
 test_even_function = [0,1,2,3,4,5,6,7,8]
-
+test_of_tens = [10,20, 30, 40 ,50 ,60 ,70, 71 ,80 ,99, 100]
 # print(test)
 # print(test[1], test[4], test[len(test)-3])
 
@@ -44,17 +44,26 @@ def is_greater_than_specified(list_of_values, floor):
 
 
 #func consumes a list and a returns a list of all numbers less than ceiling
-def is_less_than_specified(list_of values, ceiling):
+def is_less_than_specified(list_of_values, ceiling):
     ceiling_list = []
-    for num in list_of values:
+    for num in list_of_values:
         if num < ceiling:
             ceiling_list.append(num)
     return ceiling_list
 
+def remove_multiples_of_ten(list_of_values):
+    list_of_no_tens = []
+    for num in list_of_values:
+        if num %10 !=0:
+            list_of_no_tens.append(num)
+    return list_of_no_tens
 
-
-b = is_less_than_specified(test_even_function, 5)
-print(b)
+no_tens_in_list = [x for x in test_of_tens if x %10 !=0]
+print(no_tens_in_list)
+c = remove_multiples_of_ten(test_of_tens)
+print(c)
+# b = is_less_than_specified(test_even_function, 5)
+# print(b)
 
 # a = is_greater_than_specified(test_even_function, 5)
 # print(a)
