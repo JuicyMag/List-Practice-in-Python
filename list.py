@@ -119,6 +119,20 @@ def open_file(file_name):
 #consumes an entire txt file, returns one random word
 def pick_random_word_from_text(entire_txt_file):
     x = entire_txt_file.split()
-    return random.choice(x)
+    y = entire_txt_file.split()
+    return random.choice(x), random.choice(y)
 b = open_file("wordlist.10000.txt")
-print(pick_random_word_from_text(b))
+# c = open_file("wordlist.10000.txt")
+# print(pick_random_word_from_text(b))
+# print(pick_random_word_from_text(c))
+
+def check_if_word_in_list(word, list):
+    # b = open(list, 'r')
+    c = open(list, 'r').read()
+
+    if word in c:
+        print(word + " is in list")
+    else:
+        print(word + " is NOT in list")
+
+check_if_word_in_list("dog", "wordlist.10000.txt")
