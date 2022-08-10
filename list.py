@@ -1,3 +1,4 @@
+from operator import contains
 import random
 
 test = ['Hello', '1',True,'2.4', False, 2, '4']
@@ -135,4 +136,18 @@ def check_if_word_in_list(word, list):
     else:
         print(word + " is NOT in list")
 
-check_if_word_in_list("dog", "wordlist.10000.txt")
+
+#this function will print all words in a list that contain the word
+# def print_all_access_contained(word, list):
+#     empty_list = []
+#     c =  open(list, 'r').read()
+#     d = c.split
+
+#     for val in d: 
+#         if word in val:
+#             empty_list.append(val)
+#     return empty_list
+
+# de = print_all_access_contained('a', "wordlist.10000.txt")
+# print(de)
+# check_if_word_in_list("dog", "wordlist.10000.txt")
